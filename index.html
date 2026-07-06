@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><span>&#9992;</span>Sky Search</h1>
+
+    <form id="searchForm">
+
+        <input
+            type="text"
+            id="departure"
+            placeholder="Departure Airport (HYD)"
+            required
+        >
+
+        <input
+            type="text"
+            id="arrival"
+            placeholder="Arrival Airport (DEL)"
+            required
+        >
+
+        <button type="submit">
+            Search Flights
+        </button>
+
+    </form>
+
+    <div id="loading"></div>
+
+    <div id="results"></div>
+    <div>
+<input type="date" id="fromDate" required>
+<input type="date" id="toDate" required>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
